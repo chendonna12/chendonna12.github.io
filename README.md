@@ -15,5 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 This is a Readme file for UXUI!
-Update
-NEW NEW NEW
+More stuff!
