@@ -1,0 +1,148 @@
+body {
+    font-family: "Hammersmith One", sans-serif;
+    background-color: #e5ddc8;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "Notable", sans-serif;
+    color: #db1f48;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* navbar was restyled to Flexbox */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #004369;
+    text-align: center;
+    border-top: 10px double #01949a;
+    border-bottom: 10px double #01949a;
+}
+
+nav a {
+    color: #ffffff;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e5ddc8;
+}
+
+article {
+    padding: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    border: 2px solid #004369;
+    background-color: #eeffff;
+    /* this keeps the card no wider than the photo */
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.card h3,
+.card p {
+    padding: 0 0.5rem;
+}
+
+section {
+    padding: 1rem;
+}
+
+
+/* these are the red buttons at the bottom. We can restyle them just like a navbar. We used inline-block, but you could use Flexbox instead if you prefer */
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section a {
+    display: block;
+    background-color: #db1f48;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #db1f48;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section a:hover {
+    background-color: #ffffff;
+    color: #db1f48;
+    border: 1px solid #db1f48;
+}
+
+footer {
+    background-color: #004369;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-top: 10px double #01949a;
+    margin-top: 3rem;
+}
+
+
+/* this looks GREAT at mobile dimensions -- no need to change from a stacked display to a side-by-side display if the UI works at all dimensions */
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+}
+
+
+/* breakpoint chosen because around this width, the "soup" in "chicken tortilla soup" wraps to the next line. You may have chosen a different dimension and that's fine. Just have a reason for choosing your breakpoint! */
+
+@media (min-width: 750px) {
+    section,
+    article {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    section li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .card-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .card {
+        flex-basis: 30%;
+        /* turn off mobile settings */
+        margin: 0;
+    }
+}
