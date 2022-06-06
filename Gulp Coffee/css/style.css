@@ -222,17 +222,17 @@ align-content:center;
   }
 
   .item1 {
-    grid-column: 1/ span 3;
+    grid-row: 1;
   }
 
   .item2 {
-    grid-column: 1 / span 3;
+    grid-row: 2;
   }
 
   .item3 {
-    grid-column: 1 / span 3;
+    grid-row: 3;
+
   }
-  
   hgroup{
     margin-left:0;
     padding:10px;
@@ -258,25 +258,13 @@ align-content:center;
   }
 
   .grid-container {
-    display: grid;
-    gap: 10px;
-    padding: 10px;
+    display:flex;
+    justify-content: space-around;
   }
   .grid-container > div {
-    text-align: center;
-    padding: 20px 0;
+    text-overflow: clip;
   }
+  
 
-  .item1 {
-    grid-row: 1;
-  }
 
-  .item2 {
-    grid-row: 2;
-  }
-
-  .item3 {
-    grid-row: 3;
-
-  }
 }
